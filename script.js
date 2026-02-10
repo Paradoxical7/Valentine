@@ -63,13 +63,33 @@ function displayCatHeart() {
     var imageContainer = document.getElementById('image-container');
     imageContainer.innerHTML = '';
 
+    // Wrapper for end screen
+    var endScreen = document.createElement('div');
+    endScreen.className = 'end-screen';
+
+    // Cat heart image
     var catHeartImage = new Image();
     catHeartImage.src = 'cat-heart.gif';
     catHeartImage.alt = 'Cat Heart';
 
-    imageContainer.appendChild(catHeartImage);
+    // Final image
+    var finalImage = new Image();
+    finalImage.src = 'final.jpg';
+    finalImage.alt = 'Final Image';
+
+    // Message
+    var message = document.createElement('div');
+    message.className = 'end-message';
+    message.innerText = 'Yay 💖 Happy Valentine’s Day!';
+
+    endScreen.appendChild(catHeartImage);
+    endScreen.appendChild(finalImage);
+    endScreen.appendChild(message);
+
+    imageContainer.appendChild(endScreen);
     document.getElementById('options').style.display = 'none';
 }
 
 // Initial load
 displayCat();
+
