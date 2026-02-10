@@ -74,7 +74,7 @@ function displayCatHeart() {
 
     // Final image
     var finalImage = new Image();
-    finalImage.src = 'final.png';
+    finalImage.src = 'final.jpg';
     finalImage.alt = 'Final Image';
 
     // Message
@@ -92,5 +92,6 @@ function displayCatHeart() {
 
 // Initial load
 displayCat();
+
 
 
